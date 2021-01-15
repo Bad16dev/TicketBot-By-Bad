@@ -79,7 +79,7 @@ To create a ticket react with : 📨
 collector1.on('collect', r => {///////////Bad - بدرو
 
  message.guild///////////Bad - بدرو
-      .createChannel(`ticket-${message.author.username}`, "text")
+      .createChannel(`New Ticket`, "text")
       .then(c => {
         let role2 = message.guild.roles.find("name", "@everyone");
         c.overwritePermissions(role2, {
